@@ -1,0 +1,41 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "airbnb",
+    "airbnb-typescript",
+    "prettier",
+    "plugin:react/recommended"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "import/prefer-default-export": "off",
+    "array-callback-return": "off",
+    "react/function-component-definition": [2, { "namedComponents": "arrow-function" }],
+    "arrow-body-style": "off",
+    "react/require-default-props": "off",
+    "react/button-has-type": "warn",
+    "consistent-return": "off",
+    "sx-a11y/aria-props": "off",
+    "react/jsx-fragments": "off",
+    "react/no-unknown-property": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "react-hooks/rules-of-hooks": "warn",
+    "jsx-a11y/aria-role": "off",
+    "no-useless-computed-key": "off",
+    "import/no-absolute-path": "off",
+    "react/prop-types": "off"
+  },
+  "plugins": ["@typescript-eslint", "react"],
+  "env": {
+    "node": true,
+    "browser": true,
+    "es2021": true
+  }
+}
